@@ -11,5 +11,5 @@ float get_temperature(float input) {
 }
 
 int main() {
-  cout << "the temperature should be 6: " << get_temperature(6.0);
+  cout << "the temperature should be 6: " << get_temperature(6);
 }
