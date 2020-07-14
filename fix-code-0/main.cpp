@@ -2,15 +2,15 @@
 #include <string>
 using namespace std;
 
-int getAge() {
+int Get_Age() {
   return 4;
 }
 
-float get_temperature() {
+float Get_Temperature() {
   return 120.3;
 }
 
 int main() {
-  cout << "The temperature is: " << get_temperature() << endl;
-  cout << "The age is: " << getAge() << endl;
+  cout << "The temperature is: " << Get_Temperature() << endl;
+  cout << "The age is: " << Get_Age() << endl;
 }

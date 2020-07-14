@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-float get_temperature(int input) {
+float Get_Temperature(int input) {
   return input * 1;
 }
 
@@ -11,5 +11,5 @@ float get_temperature(float input) {
 }
 
 int main() {
-  cout << "the temperature should be 6: " << get_temperature(6);
+  cout << "the temperature should be 6: " << Get_Temperature(6);
 }

@@ -1,21 +1,29 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int Input(int y){
-  cin >> y;
-  return y;
+
+int Input() {
+    int x;
+    cout << "Enter the number :";
+    cin >> x;
+    return x;
 }
-int factorial(int x){
-  x=x*factorial(x-1);
-  return x;
+int Factorial(int x){
+  if(x==0)
+  return 1;
+
+  else
+  return x * Factorial(x-1);
+
 }
 
 int main() {
-  int y;
-  int number = Input(y);
-  int Factorial = factorial(number);
-
-  cout << "The factorial of " << number << " is " << Factorial << endl;
+  int number = Input();
+  //int factorial = Factorial(number);
+  if(number >= 0)
+  cout << Factorial(number);
+  else
+  cout << "Factorial doesn't exist";
 
   return 0;
 }
